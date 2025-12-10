@@ -1,0 +1,5 @@
+setreg 67
+ramstore 6 A
+ramload B 6
+add C B A
+dec C C

@@ -1,0 +1,11 @@
+setreg 7
+ramstore 15 A
+setreg 6
+B=A
+setreg 7
+C=A
+setreg 0
+add A A C
+dec B B
+jz B
+ramstore 0 A

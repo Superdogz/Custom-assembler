@@ -1,0 +1,12 @@
+setreg 5
+ramstore 15 A
+setreg 1
+ramstore 0 A 
+ramstore 1 A
+ramload A 0
+ramload B 1
+add C A B
+ramload A 1
+ramstore 0 A
+ramstore 1 C
+jump
