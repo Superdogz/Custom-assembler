@@ -1,4 +1,6 @@
 # Custom-assembler
+## About This Project:
+In this project, I created my own version of the assembly language for a 16x16 RAM CPU that I designed in Logisim Evolution. The main.py file is the assembler that translates the assembly code into hex machine code that can then be executed in the CPU.circ Logisim file.
 ## How to Use:
     1. Running the main.py file will output the assembly code 
     in the terminal and save it into ouput_file.txt file which 
@@ -41,6 +43,10 @@
             You can change the factorial value by changing the first line (ex.0006 means 6 factorial)
             Stores the final value in the SECOND register of RAM
             Currently does 5 factorial; result should be 0x0078 = 120
+
+## Assembly Code Documentation:
+
+
 
 
 
