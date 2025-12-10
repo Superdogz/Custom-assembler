@@ -45,6 +45,47 @@ In this project, I created my own version of the assembly language for a 16x16 R
             Currently does 5 factorial; result should be 0x0078 = 120
 
 ## Assembly Code Documentation:
+<img width="745" height="98" alt="Machine Code info chart" src="https://github.com/user-attachments/assets/370630e4-f2b7-405d-83dc-2a71bb155aa1" />
+### General:
+
+**Format: 1-bit control input, 4-bit RAM address, 5-bit ALU operations, 2-bit target, 2-bit operands, 2-bit jump**
+
+<img width="408" height="392" alt="ALUops" src="https://github.com/user-attachments/assets/08343702-e9f5-47a3-84b9-1616d977d80f" />
+
+
+**RAM Store Operation (ramstore)**  
+    Assembly: ramstore 3 A  
+    Machine Code: 0b 1 0011 10011 11 00 00  
+    Effect: The contents of register A are stored in RAM location 3  
+
+**RAM Load Operation (ramload)**  
+    Assembly: ramload A 8  
+    Machine Code: 0b 1 1000 10010 00 11 00  
+    Effect: The contents of RAM location 8 are loaded into register A  
+
+**Register Set Operation (regset)**  
+    Note: Can only set the A register  
+    Assembly: regset 27  
+    Machine Code: 0b 0 0000 00000 01 10 11  
+    Effect: The number 27 is stored in register A  
+
+**Unconditional Jump (jump)**  
+	    Assembly: jump  
+	    Machine Code: 0b 1 0000 10011 00 0 111  
+	    Effect: Jumps to whatever is set in register A  
+
+**Jump zero(jz)**  
+    Jumps if the value is not zero (used in for loops) 
+    Assembly: jz B  
+    Machine Code: 0b 1 1111 10010 01 00 10  
+    Effect: If register B is not 0, jumps to whatever is set in register 16  
+
+### Keywords:
+
+<img width="488" height="624" alt="Keywords" src="https://github.com/user-attachments/assets/3728cfcf-18d6-411b-bf94-931f759166e5" />
+
+
+
 
 
 
