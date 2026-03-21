@@ -1,6 +1,7 @@
 # Custom-assembler
 ## About This Project:
-In this project, I created my own version of the assembly language for a 16x16 RAM CPU that I designed in Logisim Evolution. The main.py file is the assembler that translates the assembly code into hex machine code that can then be executed in the CPU.circ Logisim file.
+In this project, I created my own version of the assembly language for a 16x16 RAM CPU that I designed in Logisim Evolution. The main.py file is the assembler that translates the assembly code into hex machine code that can then be executed in the CPU.circ Logisim file.<img width="1091" height="679" alt="Screenshot 2026-03-21 at 1 41 30 PM" src="https://github.com/user-attachments/assets/628a9ec3-1aeb-46ed-b6a5-f337126d16a9" />
+
 ## How to Use:
     1. Running the main.py file will output the assembly code 
     in the terminal and save it into ouput_file.txt file which 
